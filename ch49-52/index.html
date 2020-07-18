@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch49-52</title>
+</head>
+<style>
+    a{
+        
+        margin-left: 60px;
+    }
+    .mobiles h1{
+        text-align: center;
+        color: blue;
+    }
+    .mobiles ul li{
+        display: inline-block;
+    }
+    .mobiles ul li img:hover{
+        transform: scale(1.1);
+    }
+    table{
+        border: 2px solid gray;
+        width: 230px;
+    }
+    #std, td{
+        border: 2px solid gray;
+        text-align: center;
+        width: 330px;
+    }
+    .dis{
+        display: block;
+    }
+   
+#stdRecord table , th{
+    border:  2px solid gray;
+}
+
+</style>
+
+<body>
+  
+<h3>Ch# 49-52 <br><br>Question#1</h3>
+    <div id = "data">
+
+    </div>
+
+    <input type="text" id = "uname" value = "Username"><br>
+    <input type="text" id = "email" value = "E-mail"><br>
+    <input type="text" id= "pswrd" value = "Password"><br>
+    <input type="text" id = "phone"  value = "Phone#"><br>
+    <input type="button" onclick="submit()" value = "Signup">
+
+
+
+
+
+<div>
+    <h3>Question#2</h3>
+    <img src="pic4.jpg" >
+    <p style="padding-left: 50px;">Iphone 11 pro</p>
+    <button  id = "read" onclick="read()" style="width: 200px;">Read More</button>
+</div>
+
+<h3>Question#3</h3>
+    
+    <div id="stdRecord">
+        <table  cellspacing=2 cellpadding=5 id="data_table" >
+        <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Age</th>
+        </tr>
+        
+        <tr id="row1">
+        <td id="name_row1">Duaa</td>
+        <td id="country_row1">Pakistan</td>
+        <td id="age_row1">20</td>
+        <td>
+        <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+        <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+        </td>
+        </tr>
+        
+        <tr id="row2">
+        <td id="name_row2">Waqar</td>
+        <td id="country_row2">America</td>
+        <td id="age_row2">36</td>
+        <td>
+        <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+        <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+        </td>
+        </tr>
+        
+        <tr id="row3">
+        <td id="name_row3">Emilly</td>
+        <td id="country_row3">India</td>
+        <td id="age_row3">19</td>
+        <td>
+        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+        </td>
+        </tr>
+        
+        <tr>
+        <td><input type="text" id="new_name"></td>
+        <td><input type="text" id="new_country"></td>
+        <td><input type="text" id="new_age"></td>
+        <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+        </tr>
+        
+        </table>
+        </div>
+
+<script src="app.js">
+
+
+</script>
+</body>
+</html>
