@@ -11,9 +11,34 @@
     </style>
 </head>
 <body>
+    <div >
+        <img src="images/3.jpg" data-toggle="modal" data-target="#exampleModalCenter" class="image" onclick="zoom(this)">
+        <img src="images/4.png" onclick="zoom(this)" data-toggle="modal" data-target="#exampleModalCenter" class="image">
+        <img src="images/5.jpg" onclick="zoom(this)" data-toggle="modal" data-target="#exampleModalCenter" class="image">
+        <img src="images/6.jpg" onclick="zoom(this)" data-toggle="modal" data-target="#exampleModalCenter" class="image">
+        </div> 
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="" id="modalImg" height="300px" width="450px">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+         
     <!-- <h2>Image Modal</h2>
     <div id="modal-images" >
-        <img class="img-thumbnail " id="myImg1" src="images/others/1.jpg" style="width:100%;max-width:300px ;max-height:400px;">    
+        <img class="img-thumbnail " id="myImg1" src="images/others/1.jpg" style="width:100%;max-width:300px ;
+        max-height:400px;">    
            
         
     </div>
@@ -22,8 +47,6 @@ The Modal
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
 </div> -->
-
-
 
 <script src="app.js"></script>
 </body>
